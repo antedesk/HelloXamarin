@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 
@@ -12,34 +13,41 @@ namespace HelloXamarin
         public App()
         {
             // The root page of your application
-            MainPage = new ContentPage
-            {
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Hello Xamarin!"
-                        }
-                    }
-                }
-            };
+  
+            MainPage = new XAMLPageXample();
+
         }
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            Debug.WriteLine("HelloXamarin OnStart");
+            
         }
 
         protected override void OnSleep()
         {
-            // Handle when your app sleeps
+            Application.Current.Properties["test"] = "HTML.it";
+            //if (Device.OS == TargetPlatform.Android)
+            //    Debug.WriteLine("I'm on Android");
+            //else if (Device.OS == TargetPlatform.WinPhone)
+            //    Debug.WriteLine("I'm on WP");
+            Debug.WriteLine("HelloXamarin OnSleep");
+
         }
 
         protected override void OnResume()
         {
-            // Handle when your app resumes
+            if (Application.Current.Properties.ContainsKey("test"))
+            {
+                string test = Application.Current.Properties["test"] as string;
+                
+                Debug.WriteLine(test);
+                // do something with id
+            }
+            Debug.WriteLine("HelloXamarin OnResume");
         }
+
+     
     }
+    
 }

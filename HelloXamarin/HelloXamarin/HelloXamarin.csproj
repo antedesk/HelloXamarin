@@ -42,7 +42,6 @@
     <Compile Include="RelativeLayoutExample.cs" />
     <Compile Include="StackLayoutViewsExample.cs" />
     <Compile Include="TableViewCellsExample.cs" />
-    <Compile Include="View1.cs" />
     <Compile Include="XAMLPageXample.xaml.cs">
       <DependentUpon>XAMLPageXample.xaml</DependentUpon>
     </Compile>

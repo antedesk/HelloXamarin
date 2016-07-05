@@ -13,7 +13,7 @@ namespace HelloXamarin
         public XAMLPageXample()
         {
             InitializeComponent();
-            welcomeLabel.Text = "XAML Example";
+            lbl.Text = "XAML Example";
         }
 
         void OnAlertClicked(object sender, EventArgs args)

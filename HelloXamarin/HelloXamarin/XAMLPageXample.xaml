@@ -28,6 +28,7 @@
                   TextColor="Lime" 
                   HorizontalOptions="Center" 
                   VerticalOptions="EndAndExpand" 
+                  BackgroundColor="Black"
                   Clicked="OnAlertClicked"/>
        
         </StackLayout>

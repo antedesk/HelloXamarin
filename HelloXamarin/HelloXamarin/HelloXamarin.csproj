@@ -39,10 +39,15 @@
     <Compile Include="CodeContentPage.cs" />
     <Compile Include="ContePageXample.cs" />
     <Compile Include="FormViewModel.cs" />
+    <Compile Include="ListViewExample.xaml.cs">
+      <DependentUpon>ListViewExample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MVVMDataBinding.xaml.cs">
       <DependentUpon>MVVMDataBinding.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RecipeCustomCell.cs" />
+    <Compile Include="RecipeDataSource.cs" />
     <Compile Include="RelativeLayoutExample.cs" />
     <Compile Include="StackLayoutViewsExample.cs" />
     <Compile Include="TableViewCellsExample.cs" />
@@ -78,6 +83,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ListViewExample.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.0.107\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.0.107\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />

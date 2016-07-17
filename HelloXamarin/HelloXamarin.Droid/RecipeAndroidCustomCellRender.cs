@@ -24,18 +24,18 @@ namespace HelloXamarin.Droid
     {
         protected override Android.Views.View GetCellCore(Xamarin.Forms.Cell item, Android.Views.View convertView, ViewGroup parent, Context context)
         {
-            var x = (RecipeCustomCell)item;
+            var customcell = (RecipeCustomCell)item;
 
             var view = convertView;
 
+            // no view to re-use, create new
             if (view == null)
             {
-                // no view to re-use, create new
                 view = (context as Activity).LayoutInflater.Inflate(Resource.Layout.RecipeCustomCell, null);
             }
 
-            view.FindViewById<TextView>(Resource.Id.name).Text = x.Name;
-            view.FindViewById<TextView>(Resource.Id.type).Text = x.Type;
+            view.FindViewById<TextView>(Resource.Id.name).Text = customcell.Name;
+            view.FindViewById<TextView>(Resource.Id.type).Text = customcell.Type;
 
             // grab the old image and dispose of it
             if (view.FindViewById<ImageView>(Resource.Id.Image).Drawable != null)
@@ -53,9 +53,9 @@ namespace HelloXamarin.Droid
             }
 
             // If a new image is required, display it
-            if (!String.IsNullOrWhiteSpace(x.ImagePath))
+            if (!String.IsNullOrWhiteSpace(customcell.ImagePath))
             {
-                context.Resources.GetBitmapAsync(x.ImagePath).ContinueWith((t) => {
+                context.Resources.GetBitmapAsync(customcell.ImagePath).ContinueWith((t) => {
                     var bitmap = t.Result;
                     if (bitmap != null)
                     {

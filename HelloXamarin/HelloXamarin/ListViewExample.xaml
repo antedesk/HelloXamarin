@@ -11,7 +11,10 @@
             <local:RecipeCustomCell Name="{Binding Name}" Type="{Binding Type}" ImagePath="{Binding ImagePath}" />
           </DataTemplate>
         </ListView.ItemTemplate>
-        <!-- <ListView.ItemTemplate>
+        
+        <!-- Example of ListView based on ImageCell -->
+        <!--
+        <ListView.ItemTemplate>
           <DataTemplate>
             <ImageCell ImageSource="{Binding ImagePath}" Text="{Binding Name}" Detail="{Binding Type}" />
           </DataTemplate>

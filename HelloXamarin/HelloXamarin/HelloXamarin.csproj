@@ -51,6 +51,9 @@
     <Compile Include="RelativeLayoutExample.cs" />
     <Compile Include="StackLayoutViewsExample.cs" />
     <Compile Include="TableViewCellsExample.cs" />
+    <Compile Include="WebViewExample.xaml.cs">
+      <DependentUpon>WebViewExample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="XAMLPageXample.xaml.cs">
       <DependentUpon>XAMLPageXample.xaml</DependentUpon>
     </Compile>
@@ -86,6 +89,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ListViewExample.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WebViewExample.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

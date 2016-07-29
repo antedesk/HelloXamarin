@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloXamarin.WebViewExample">
+  
+  
+  <!-- Definizione con StackLayout -->
+  <StackLayout>
+    <Entry x:Name="urlEntry" Keyboard="Url" Placeholder="web address" Completed="OnURLCompleted" />
+    <StackLayout Orientation="Horizontal" BindingContext="{x:Reference webv}">
+      <Button Text="back   " FontSize="Large" HorizontalOptions="FillAndExpand" IsEnabled="{Binding CanGoBack}" Clicked="OnGoBackClicked" />
+      <Button Text="forward" FontSize="Large" HorizontalOptions="FillAndExpand" IsEnabled="{Binding CanGoForward}" Clicked="OnGoForwardClicked" />
+    </StackLayout>
+    <Label x:Name="loadinglbl" Text="Loading" HorizontalOptions="Center" IsVisible="false" />
+    <WebView x:Name="webv" WidthRequest="1000" HeightRequest="1000" Navigating="webOnNavigating" Navigated="webOnEndNavigating"/>
+  </StackLayout>
+
+
+  <!-- Definizione con AbsoluteLayout -->
+  <!-- 
+  <AbsoluteLayout>
+    <WebView x:Name="webv" AbsoluteLayout.LayoutBounds="0,0,1000,1000" />
+  </AbsoluteLayout>
+  -->
+
+  <!-- Definizione con Grid -->
+  <!--
+  <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="100" />
+        <RowDefinition Height="*" />
+    </Grid.RowDefinitions>
+    <Label Text="WebViewExample" Grid.Row="0" />
+    <WebView x:Name="webv" Grid.Row="1" />
+  </Grid>
+  -->
+
+</ContentPage>

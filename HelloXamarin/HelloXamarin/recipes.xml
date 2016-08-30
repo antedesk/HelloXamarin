@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ArrayOfRecipe xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Recipe>
+		<Name>Amatriciana</Name>
+		<Type>Primo</Type>
+		<PreparationTime>30 min</PreparationTime>
+	</Recipe>
+	<Recipe>
+		<Name>Carbonara</Name>
+		<Type>Primo</Type>
+		<PreparationTime></PreparationTime>
+	</Recipe>
+	<Recipe>
+		<Name>Risotto ai funghi</Name>
+		<Type>Primo</Type>
+		<PreparationTime>25 min</PreparationTime>
+	</Recipe>
+	<Recipe>
+		<Name>Gricia</Name>
+		<Type>Primo</Type>
+		<PreparationTime></PreparationTime>
+	</Recipe>
+	<Recipe>
+		<Name>Pollo al forno</Name>
+		<Type>Secondo</Type>
+		<PreparationTime>30 min</PreparationTime>
+	</Recipe>
+	<Recipe>
+		<Name>Cotoletta</Name>
+		<Type>Secondo</Type>
+		<PreparationTime>15 min</PreparationTime>
+	</Recipe>
+	<Recipe>
+		<Name>Veggie Burger</Name>
+		<Type>Secondo</Type>
+		<PreparationTime>20 min</PreparationTime>
+	</Recipe>
+	<Recipe>
+		<Name>Arrosto di maiale</Name>
+		<Type>Secondo</Type>
+		<PreparationTime>40 min</PreparationTime>
+	</Recipe>
+	<Recipe>
+		<Name>Tortino al cioccolato</Name>
+		<Type>Dolce</Type>
+		<PreparationTime>35 min</PreparationTime>
+	</Recipe>
+	<Recipe>
+		<Name>Sorbetto al limone</Name>
+		<Type>Dolce</Type>
+		<PreparationTime>40 min</PreparationTime>
+	</Recipe>
+	<Recipe>
+		<Name>Sacher</Name>
+		<Type>Dolce</Type>
+		<PreparationTime>40 min</PreparationTime>
+	</Recipe>
+	<Recipe>
+		<Name>Crostata di Amarene</Name>
+		<Type>Dolce</Type>
+		<PreparationTime>40 min</PreparationTime>
+	</Recipe>
+</ArrayOfRecipe>

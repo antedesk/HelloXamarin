@@ -92,6 +92,7 @@
     <Compile Include="AppDelegate.cs" />
     <Compile Include="RecipeiOSCustomCell.cs" />
     <Compile Include="RecipeiOSCustomCellRenderer.cs" />
+    <Compile Include="FileManager_iOS.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist">
       <SubType>Designer</SubType>

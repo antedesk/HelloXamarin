@@ -13,6 +13,7 @@ namespace HelloXamarin
         public string Type { get; set; }
         public string ImagePath { get; set; }
 
+
         public RecipeDataSource(string name, string type, string imagePath)
         {
             Name = name;
@@ -20,10 +21,12 @@ namespace HelloXamarin
             ImagePath = imagePath;
         }
 
+
+
         public static List<RecipeDataSource> GetList()
         {
             var recipeList = new List<RecipeDataSource>();
-            recipeList.Add(new RecipeDataSource("Matriciana", "Primo", "fakeIMG.png"));
+            recipeList.Add(new RecipeDataSource("Amatriciana", "Primo", "fakeIMG.png"));
             recipeList.Add(new RecipeDataSource("Carbonara", "Primo", "fakeIMG.png"));
             recipeList.Add(new RecipeDataSource("Risotto ai funghi", "Primo", "fakeIMG.png"));
             recipeList.Add(new RecipeDataSource("Gricia", "Primo", "fakeIMG.png"));
@@ -31,7 +34,7 @@ namespace HelloXamarin
             recipeList.Add(new RecipeDataSource("Cotoletta", "Secondo", "fakeIMG.png"));
             recipeList.Add(new RecipeDataSource("Veggie Burger", "Secondo", "fakeIMG.png"));
             recipeList.Add(new RecipeDataSource("Arrosto di maiale", "Secondo", "fakeIMG.png"));
-            recipeList.Add(new RecipeDataSource("Tortino al cioccola", "Dolce", "fakeIMG.png"));
+            recipeList.Add(new RecipeDataSource("Tortino al cioccolato", "Dolce", "fakeIMG.png"));
             recipeList.Add(new RecipeDataSource("Sorbetto al limone", "Dolce", "fakeIMG.png"));
             recipeList.Add(new RecipeDataSource("Sacher", "Dolce", "fakeIMG.png"));
             recipeList.Add(new RecipeDataSource("Crostata di Amarene", "Dolce", "fakeIMG.png"));

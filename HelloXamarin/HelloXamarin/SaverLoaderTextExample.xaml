@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloXamarin.SaverLoaderTextExample">
+  <StackLayout>
+    <Label Text="Save and Load text" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Editor x:Name="input" HeightRequest="250"/>
+
+    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+      <Button x:Name="saveButton" Text="Save Text"/>
+      <Button x:Name="loadButton" Text="Laod Text"/>
+    </StackLayout>
+    <Label x:Name="output" Text=""/>
+  </StackLayout>
+</ContentPage>

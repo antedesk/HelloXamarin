@@ -14,7 +14,7 @@ namespace HelloXamarin
         {
             // The root page of your application
   
-            MainPage = new WebViewExample();
+            MainPage = new SaverLoaderTextExample();
 
         }
 

@@ -38,14 +38,17 @@
     <Compile Include="App.cs" />
     <Compile Include="CodeContentPage.cs" />
     <Compile Include="ContePageXample.cs" />
+    <Compile Include="Data\RecipesDAO.cs" />
     <Compile Include="FormViewModel.cs" />
     <Compile Include="IFileManager.cs" />
     <Compile Include="ImageManagmentExample.xaml.cs">
       <DependentUpon>ImageManagmentExample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IRecipesDatabaseConnection.cs" />
     <Compile Include="ListViewExample.xaml.cs">
       <DependentUpon>ListViewExample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\RecipeModel.cs" />
     <Compile Include="MVVMDataBinding.xaml.cs">
       <DependentUpon>MVVMDataBinding.xaml</DependentUpon>
     </Compile>
@@ -56,6 +59,12 @@
     <Compile Include="RelativeLayoutExample.cs" />
     <Compile Include="SaverLoaderTextExample.xaml.cs">
       <DependentUpon>SaverLoaderTextExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SQLiteDatabaseExample.xaml.cs">
+      <DependentUpon>SQLiteDatabaseExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SQLiteDatabaseRecipeDetailsExample.xaml.cs">
+      <DependentUpon>SQLiteDatabaseRecipeDetailsExample.xaml</DependentUpon>
     </Compile>
     <Compile Include="StackLayoutViewsExample.cs" />
     <Compile Include="TableViewCellsExample.cs" />
@@ -82,6 +91,18 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="SQLite-net, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\sqlite-net-pcl.1.1.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCL.batteries, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQLitePCL.bundle_green.0.9.2\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.batteries.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLitePCL.raw, Version=0.9.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\SQLitePCL.raw.0.9.2\lib\portable-net45+netcore45+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLitePCL.raw.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.2.3.0.107\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
       <Private>True</Private>
@@ -127,6 +148,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ImageManagmentExample.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SQLiteDatabaseExample.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SQLiteDatabaseRecipeDetailsExample.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

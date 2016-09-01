@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HelloXamarin.Data;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -10,18 +11,42 @@ namespace HelloXamarin
 {
     public class App : Application
     {
+        static RecipesDAO database;
+
+
         public App()
         {
             // The root page of your application
-  
-            MainPage = new ImageManagmentExample();
+    
 
+            Resources = new ResourceDictionary();
+            Resources.Add("primaryGreen", Color.FromHex("197519"));
+
+            var nav = new NavigationPage(new SQLiteDatabaseExample());
+            nav.BarBackgroundColor = (Color)App.Current.Resources["primaryGreen"];
+            nav.BarTextColor = Color.White;
+
+
+            MainPage = nav;
+        }
+
+
+        public static RecipesDAO Database
+        {
+            get
+            {
+                if (database == null)
+                {
+                    database = new RecipesDAO();
+                }
+                return database;
+            }
         }
 
         protected override void OnStart()
         {
             Debug.WriteLine("HelloXamarin OnStart");
-            
+            var x = App.Database;
         }
 
         protected override void OnSleep()

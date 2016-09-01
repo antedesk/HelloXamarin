@@ -22,16 +22,18 @@ namespace HelloXamarin
             //                    </body></html>";
             //webv.Source = htmlSource;
 
+            //var x = App.Database;
+
         }
 
         void OnURLCompleted(object sender, EventArgs args)
         {
             string site = ((Entry)sender).Text;
-            if (site.Contains("http://"))
+            if (site.Contains("https://"))
                 webv.Source = site;
             else
             {
-                string uri = "http://" + site;
+                string uri = "https://" + site;
                 webv.Source = uri;
                 urlEntry.Text = uri;
 

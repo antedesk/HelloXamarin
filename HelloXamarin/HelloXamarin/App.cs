@@ -19,15 +19,15 @@ namespace HelloXamarin
             // The root page of your application
     
 
-            Resources = new ResourceDictionary();
-            Resources.Add("primaryGreen", Color.FromHex("197519"));
+            //Resources = new ResourceDictionary();
+            //Resources.Add("primaryGreen", Color.FromHex("197519"));
 
-            var nav = new NavigationPage(new SQLiteDatabaseExample());
-            nav.BarBackgroundColor = (Color)App.Current.Resources["primaryGreen"];
-            nav.BarTextColor = Color.White;
+            //var nav = new NavigationPage(new SQLiteDatabaseExample());
+            //nav.BarBackgroundColor = (Color)App.Current.Resources["primaryGreen"];
+            //nav.BarTextColor = Color.White;
 
 
-            MainPage = nav;
+            MainPage = new LocationAcquisitionExample();
         }
 
 
@@ -46,7 +46,7 @@ namespace HelloXamarin
         protected override void OnStart()
         {
             Debug.WriteLine("HelloXamarin OnStart");
-            var x = App.Database;
+            var path_db = App.Database;
         }
 
         protected override void OnSleep()

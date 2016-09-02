@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloXamarin.LocationAcquisitionExample">
+  <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+    <StackLayout Orientation="Horizontal" Spacing="15"> 
+      <Label Text="Latitudine: " FontSize="20" HorizontalOptions="Center"/>
+      <Label x:Name="LatitudeText" FontSize="20"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal" Spacing="15">
+      <Label Text="Longitudine: " FontSize="20" HorizontalOptions="Center"/>
+      <Label x:Name="LongitudeText" FontSize="20"/>
+    </StackLayout>
+
+  </StackLayout>
+</ContentPage>

@@ -48,6 +48,11 @@
     <Compile Include="ListViewExample.xaml.cs">
       <DependentUpon>ListViewExample.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LocationAcquisitionExample.xaml.cs">
+      <DependentUpon>LocationAcquisitionExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Location\ILocationProvider.cs" />
+    <Compile Include="Location\LocationPoint.cs" />
     <Compile Include="Model\RecipeModel.cs" />
     <Compile Include="MVVMDataBinding.xaml.cs">
       <DependentUpon>MVVMDataBinding.xaml</DependentUpon>
@@ -91,6 +96,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v6.0\Mono.Android.dll</HintPath>
+    </Reference>
     <Reference Include="SQLite-net, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\sqlite-net-pcl.1.1.2\lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\SQLite-net.dll</HintPath>
       <Private>True</Private>
@@ -160,6 +168,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="SQLiteDatabaseRecipeDetailsExample.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LocationAcquisitionExample.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

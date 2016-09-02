@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloXamarin.Droid", "HelloXamarin\HelloXamarin.Droid\HelloXamarin.Droid.csproj", "{40DFF8C2-1B87-4F40-B023-F372A970311F}"
 EndProject

@@ -57,9 +57,12 @@
 	<string>LaunchScreen</string>
   <key>UIViewControllerBasedStatusBarAppearance</key>
   <false/>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>This app display your current</string>
+  
   <key>NSAppTransportSecurity</key>
   <dict>
-    <key>NSExceptionDomains</key>
+      <key>NSExceptionDomains</key>
     <dict>
       <key>www.html.it</key>
       <dict>

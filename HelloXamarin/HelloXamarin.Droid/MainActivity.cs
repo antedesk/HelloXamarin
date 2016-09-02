@@ -17,6 +17,7 @@ namespace HelloXamarin.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            HelloXamarin.Droid.LocalizationSupport.Init(this, bundle);
             LoadApplication(new App());
         }
     }

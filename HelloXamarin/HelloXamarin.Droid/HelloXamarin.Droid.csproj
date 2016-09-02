@@ -124,6 +124,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LocalizationSupport.cs" />
+    <Compile Include="LocationProvider_Android.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="RecipeAndroidCustomCellRender.cs" />
     <Compile Include="RecipesDatabaseConnection_Android.cs" />

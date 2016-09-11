@@ -17,7 +17,10 @@ namespace HelloXamarin.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            HelloXamarin.Droid.LocalizationSupport.Init(this, bundle);
+            global::Xamarin.FormsMaps.Init(this, bundle); //aggiunto per supporto alla mappe
+
+            HelloXamarin.Droid.LocalizationSupport.Init(this, bundle); // necessario per la localizzazione tramite LocationManager
+
             LoadApplication(new App());
         }
     }

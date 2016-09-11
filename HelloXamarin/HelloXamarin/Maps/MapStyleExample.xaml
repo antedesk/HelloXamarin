@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="HelloXamarin.Maps.MapStyleExample">
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <maps:Map x:Name="map" Grid.Row="0" Grid.ColumnSpan="3"/>
+
+
+    <StackLayout Grid.Row="1" Grid.ColumnSpan="3">
+      <Slider x:Name="zoom"  Maximum="16" Margin="10, 0" ValueChanged="OnSliderValueChanged" />
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+          <Button x:Name="street" Text = "Street"  Clicked="HandleClicked"/>
+          <Button x:Name="hybrid" Text = "Hybrid"  Clicked="HandleClicked"/>
+          <Button x:Name="satellite" Text = "Satellite"  Clicked="HandleClicked"/>
+        </StackLayout>
+    </StackLayout>
+  </Grid>
+</ContentPage>

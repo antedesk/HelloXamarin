@@ -65,6 +65,7 @@ namespace HelloXamarin.WinPhone
                 rootFrame.CacheSize = 1;
 
                 Xamarin.Forms.Forms.Init(e);
+                Xamarin.FormsMaps.Init("KgeWC9kbG7NfQ577otjA~rp-d5f73RF7HucnjmypL1Q~At9uraMQM8-GtEfzhybjlRUlXtPKM2kxw8ePEn5jgsLhlwCAFTB1wlDc2grc-fHd");
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {

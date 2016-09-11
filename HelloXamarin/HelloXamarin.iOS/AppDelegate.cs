@@ -23,6 +23,8 @@ namespace HelloXamarin.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+            global::Xamarin.FormsMaps.Init(); // aggiunto per supportare le mappe
+
             LoadApplication(new App());
             return base.FinishedLaunching(app, options);
         }

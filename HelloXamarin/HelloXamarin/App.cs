@@ -1,4 +1,5 @@
 ﻿using HelloXamarin.Data;
+using HelloXamarin.Maps;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -27,7 +28,7 @@ namespace HelloXamarin
             //nav.BarTextColor = Color.White;
 
 
-            MainPage = new LocationAcquisitionExample();
+            MainPage = new MapLocationPOIExample();
         }
 
 

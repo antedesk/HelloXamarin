@@ -4,8 +4,6 @@
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
              x:Class="HelloXamarin.Maps.MapLocationPOIExample">
 
-    <maps:Map x:Name="map" 
-            IsShowingUser="true"
-            MapType="Hybrid"/>
+    <maps:Map x:Name="map" IsShowingUser="true"/>
 
 </ContentPage>

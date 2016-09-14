@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloXamarin.App">
+  <Application.Resources>
+		<ResourceDictionary>
+		<ControlTemplate x:Key="HeaderFooterTemplate">
+				<Grid BackgroundColor="#c7c9cc">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="0.1*" />
+						<RowDefinition Height="0.8*" />
+						<RowDefinition Height="0.1*" />
+					</Grid.RowDefinitions>
+					<BoxView Grid.ColumnSpan="2" Color="#003366" />
+          <Image Grid.Column="0" VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+            <Image.Source>
+              <OnPlatform x:TypeArguments="ImageSource"
+                          iOS="logo.png"
+                          Android="logo.png"
+                          WinPhone="Images/logo.png" />
+            </Image.Source>
+          </Image>
+					<Label Grid.Column="1" Text="Header!!!" TextColor="White" FontSize="22" VerticalOptions="Center" />
+					<ContentPresenter Grid.Row="1" Grid.ColumnSpan="2" />
+					<BoxView Grid.Row="2" Grid.ColumnSpan="2"  Color="#003366"/>
+					<Label Grid.Row="2" Grid.ColumnSpan="2" Text="Footer here!" TextColor="White" FontSize="15" VerticalOptions="Center" HorizontalOptions="Center"  />
+				</Grid>
+			</ControlTemplate>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

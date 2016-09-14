@@ -13,7 +13,6 @@ namespace HelloXamarin.Maps
     public partial class MapLocationPOIExample : ContentPage
     {
         const double InitialLongitudeSpan = 48;
-        const double InitialZoom = 15;
 
         ILocationProvider locManager;
         Position position;
@@ -22,7 +21,7 @@ namespace HelloXamarin.Maps
         {
             InitializeComponent();
             map.MoveToRegion(new MapSpan(new Position(41.9027835, 12.496365500000024), 0, InitialLongitudeSpan));
-
+           
             if (Device.OS != TargetPlatform.Android)
             {
                 locManager = DependencyService.Get<ILocationProvider>();

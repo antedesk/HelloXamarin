@@ -1,5 +1,6 @@
 ﻿using HelloXamarin.ControlTemplate;
 using HelloXamarin.Data;
+using HelloXamarin.DataTemplateTest;
 using HelloXamarin.Maps;
 using System;
 using System.Collections.Generic;
@@ -29,7 +30,7 @@ namespace HelloXamarin
             //nav.BarTextColor = Color.White;
 
 
-            MainPage = new CTApplicationLevel();
+            MainPage = new DTPageLevel();
 
         }
 

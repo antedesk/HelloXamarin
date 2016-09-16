@@ -41,13 +41,20 @@
     </Compile>
     <Compile Include="CodeContentPage.cs" />
     <Compile Include="ContePageXample.cs" />
-    <Compile Include="ControlTemplate\AlternativeTemplate.cs" />
     <Compile Include="ControlTemplate\CTApplicationLevel.xaml.cs">
       <DependentUpon>CTApplicationLevel.xaml</DependentUpon>
     </Compile>
     <Compile Include="ControlTemplate\CTPageLevel.xaml.cs">
       <DependentUpon>CTPageLevel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DataTemplateTest\DTListView.xaml.cs">
+      <DependentUpon>DTListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplateTest\DTPageLevel.xaml.cs">
+      <DependentUpon>DTPageLevel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataTemplateTest\Guide.cs" />
+    <Compile Include="DataTemplateTest\GuideDTSelector.cs" />
     <Compile Include="Data\RecipesDAO.cs" />
     <Compile Include="FormViewModel.cs" />
     <Compile Include="IFileManager.cs" />
@@ -234,6 +241,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ControlTemplate\CTPageLevel.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataTemplateTest\DTListView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataTemplateTest\DTPageLevel.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
